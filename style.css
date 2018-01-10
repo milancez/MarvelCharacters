@@ -1,0 +1,104 @@
+.character-item {
+  overflow: hidden;
+  height: 250px;
+  border: 2px solid #000;
+  margin: 15px 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.character-name {
+  text-align: center;
+  padding: 5px
+}
+
+.bookmark {
+  border-radius: 0;
+  border-bottom: 2px solid #000;
+  border-top: 2px solid #000;
+  width: 100%;
+  border-left: none;
+  border-right: none;
+  padding: 5px;
+  font-weight: bold;
+  background: #DCDCDC;
+}
+
+.bookmark:hover {
+  background:#A9A9A9;
+}
+
+.bookmark.remove-bookmark {
+    color: #fff;
+    background: #4682B4;
+    font-weight: bold;
+}
+
+.bookmark.remove-bookmark:hover {
+  background: #6495ED;
+}
+
+#bookmarks-list h2, #search-result h2 {
+  text-align: center;
+  border-bottom: 1px solid #aaa;
+  margin: 0 15px;
+  padding: 5px;
+}
+
+#search {
+    margin: 20px 0;
+    border: 2px solid #777;
+    width: 100%;
+    text-align: center;
+}
+
+#pagination {
+  width: 100%;
+  text-align: center;
+}
+
+#pagination .pagination-list {
+  display: inline-block;
+  margin: 20px 0;
+}
+
+#pagination .pagination-list .page {
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid #777;
+  text-align: center;
+  width: 30px;
+  float: left;
+  cursor: pointer;
+}
+
+#pagination .pagination-list .page.active {
+    background: #4682B4;
+}
+
+@media all and (min-width: 480px) {
+    .character-item {
+      height: 350px;
+    }
+}
+
+@media all and (min-width: 768px) {
+    .character-item {
+      height: 250px;
+    }
+}
+
+@media all and (min-width: 992px) {
+    .character-item {
+      height: 200px;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .character-item {
+      height: 250px;
+    }
+}

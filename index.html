@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>Marvel characters</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <script type="text/javascript" src="cryptojslib/rollups/md5.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap3/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <p><input id="search" type="text" placeholder="Type to search Marvel characters"></p>
+
+      <div id="search-result" class="row"></div>
+      <div id="pagination">
+        <div class="pagination-list"></div>
+      </div>
+
+      <div id="bookmarks" class="row">
+        <div id="bookmarks-list"></div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      if ( $("#search").val() == "" ) {
+        showBookmarksList();
+      }
+    </script>
+
+  </body>
+</html>
