@@ -140,7 +140,7 @@ function addBookmark(character) {
 function showBookmarksList() {
   var characters = JSON.parse(localStorage.getItem("characters"));
   if (characters == null) {
-    $("#bookmarks-list").html("<h4>Your bookmarks list is empty</h4>");
+    $("#bookmarks-list").html("<h2>Bookmarks list</h2><h4>Your bookmarks list is empty</h4>");
   } else {
     var html = "<h2>Bookmarks list</h2>";
     for(var i=0; i<characters.length; i++) {
